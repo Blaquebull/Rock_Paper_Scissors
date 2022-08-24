@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <script>
+            function getComputerChoice(){
+                let randomGuess = 10*Math.random()
+                switch(true){
+                    case (randomGuess<=3):
+                            return "Scissors";
+                    break;
+                    case randomGuess<=6:
+                            return "Paper";
+                    break;
+                    default:
+                            return "Rock";
+                }
+            }
+        </script>
+    </body>
+
+</html>
