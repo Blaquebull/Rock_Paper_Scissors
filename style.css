@@ -1,37 +1,22 @@
-/*{
-    border:2px grey solid;
-}*/
-html {
-    background-color:rgb(33,39,56);
-}
 body{
     margin: 40px;
+    background-color:rgb(11, 32, 92);
 }
-.container{
+.container .images{
     display: flex;
+    align-items: center;
     justify-content:space-between;
     height: 65vh;
    gap:20vh ;
     padding: 25px;
+    margin: 0;
 }
-.result{
-    border-radius: 8%;
-    border:2px rgb(256,232,92) solid;
-    flex: 1 ;
-
-}
-.choice{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.images{
+    background-color: rgb(17,41,107);
 }
 .btn{
     height: 20vh;
     width: 40vh;
-    border-radius: 25%;
-    border:2px grey solid;
-    color: rgb(196, 187, 184);
-    font-size:xx-large;
 }
 .message,.score{
     height: 10vh;   
@@ -39,5 +24,7 @@ body{
     justify-content:center;
     align-items: center;
     font-size: xx-large;
-    color: rgb(196, 187, 184);
+    color: rgb(241, 238, 62);
+    background-color: rgb(17, 41, 107);
+    margin: 0;
 }

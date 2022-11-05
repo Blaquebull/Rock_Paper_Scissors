@@ -11,7 +11,7 @@ function getComputerChoice(){
                 return "ROCK";
     }
 }
-let playerPoint;
+    let playerPoint;
     let computerPoint;
 function playRound(playerSelection,computerSelection,round){
         playerPoint=0;
@@ -47,7 +47,7 @@ function playRound(playerSelection,computerSelection,round){
 }
     let playerScore=0 ;
     let computerScore=0 ;
-/*for(let i=0;i<=4;i++){
+for(let i=0;i<=4;i++){
 playerSelection = prompt("Choose ROCK,PAPER or SCISSORS.").toUpperCase();
 playRound(playerSelection,getComputerChoice(),i);
 playerScore=playerScore+playerPoint;
