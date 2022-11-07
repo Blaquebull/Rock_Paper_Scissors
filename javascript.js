@@ -1,3 +1,6 @@
+let compScore=0;
+let userScore=0;
+
 
 let topPara = document.querySelector(".message");
 let bottomPara = document.querySelector(".score");
@@ -6,6 +9,10 @@ let rock = document.querySelector(".rock");
 rock.addEventListener("click",()=>{
    topPara.textContent= playRound("ROCK",getComputerChoice())[0];
    bottomPara.textContent = playRound("ROCK",getComputerChoice())[1];
+   if(compScore==5 || userScore==5){
+    bottomPara.textContent = `game over the score is Computer : ${compScore}  Player : ${userScore}`;
+    userScore=compScore=0;
+}
 });
 
 
@@ -13,6 +20,9 @@ let paper = document.querySelector(".paper");
 paper.addEventListener("click",()=>{
     topPara.textContent=  playRound("PAPER",getComputerChoice())[0];
     bottomPara.textContent = playRound("PAPER",getComputerChoice())[1];
+    if(compScore==5 || userScore==5){
+        bottomPara.textContent = `game over the score is Computer : ${compScore}  Player : ${userScore}`;
+    }
 });
 
 
@@ -20,8 +30,10 @@ let scissors = document.querySelector(".scissors");
 scissors.addEventListener("click",()=>{
     topPara.textContent=  playRound("SCISSORS",getComputerChoice())[0];
     bottomPara.textContent = playRound("SCISSORS",getComputerChoice())[1];
+    if(compScore==5 || userScore==5){
+        bottomPara.textContent = `game over the score is Computer : ${compScore}  Player : ${userScore}`;
+    }
 });
-
 
 function getComputerChoice(){
     let randomGuess = 10*Math.random()
@@ -34,8 +46,7 @@ function getComputerChoice(){
                 return "ROCK";
     }
 }
-let compScore=0;
-let userScore=0;
+
 function playRound(playerSelection,computerSelection){
     let winText =`Yay,you won this round`;
     let loseText = `Sorry! You lost this round`;

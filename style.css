@@ -1,6 +1,6 @@
-.highlight{
+.highlight , img{
     box-shadow: 20px rgb(241, 238, 62);
-    border: 2px rgb(241, 238, 62);
+    border: 5px rgb(241, 238, 62);
 }
 
 body{
@@ -21,9 +21,10 @@ body{
     background-color: rgb(17,41,107);
     flex-wrap: wrap;
 }
-.btn{
+img {
     height: 20vh;
     width: 30vh;
+    
 }
 .message,.score{
     height: 15vh;   
